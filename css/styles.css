@@ -3,9 +3,20 @@ YOUR STYLES
 *******************/
 
 body {
-    background: blue;
+    background: #ccc;
 }
 
+.city {
+  color: red;
+}
+
+.state {
+  color: green;
+}
+
+.temp {
+  color: blue;
+}
 
 
 /********************
