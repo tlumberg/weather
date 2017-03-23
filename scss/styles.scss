@@ -1,6 +1,16 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background: whitesmoke;
+}
+    
+
 i {
   font-size: 12em;
   color: white;
+}
+
+h1 {
+    text-align: center;
 }
 
 // Section Containers
@@ -12,8 +22,59 @@ section {
 }
 
 #homescreen {
-  background: yellow;
+  background: #696969;
   z-index: 1;
+}
+
+#spokane {
+    //background: #696969;
+    text-align: center;
+    height: 400px;
+}
+
+
+#cheney {
+    //background: #696969;
+    text-align: center;
+    height: 400px;
+}
+
+#me {
+    //background: #696969;
+    text-align: center;
+    height: 400px;
+}
+
+//button 
+
+button {
+  background: #d97b34;
+  background-image: -webkit-linear-gradient(top, #d97b34, #573f1a);
+  background-image: -moz-linear-gradient(top, #d97b34, #573f1a);
+  background-image: -ms-linear-gradient(top, #d97b34, #573f1a);
+  background-image: -o-linear-gradient(top, #d97b34, #573f1a);
+  background-image: linear-gradient(to bottom, #d97b34, #573f1a);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  -webkit-box-shadow: 1px 1px 3px #000000;
+  -moz-box-shadow: 1px 1px 3px #000000;
+  box-shadow: 1px 1px 3px #000000;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #d95e07;
+  background-image: -webkit-linear-gradient(top, #d95e07, #331502);
+  background-image: -moz-linear-gradient(top, #d95e07, #331502);
+  background-image: -ms-linear-gradient(top, #d95e07, #331502);
+  background-image: -o-linear-gradient(top, #d95e07, #331502);
+  background-image: linear-gradient(to bottom, #d95e07, #331502);
+  text-decoration: none;
 }
 
 :target {
@@ -63,30 +124,27 @@ ul {
 .snow,
 .cloud,
 .rain {
-  background: #bdc3c7;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #bdc3c7, #2c3e50);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #bdc3c7, #2c3e50);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #242933; /* Old browsers */
+    background: -moz-linear-gradient(top, #242933 0%, #c1c1c1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #242933 0%,#c1c1c1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #242933 0%,#c1c1c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242933', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
 }
 
 .storm {
-  background: #E6DADA;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #E6DADA, #274046);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #E6DADA, #274046);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b25803; /* Old browsers */
+    background: -moz-linear-gradient(top, #b25803 0%, #c1c1c1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b25803 0%,#c1c1c1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b25803 0%,#c1c1c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b25803', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
 }
 
 .sunny {
-  background: #F09819;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F09819, #EDDE5D);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F09819, #EDDE5D);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #f4cc04; /* Old browsers */
+    background: -moz-linear-gradient(top, #f4cc04 0%, #c1c1c1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f4cc04 0%,#c1c1c1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f4cc04 0%,#c1c1c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4cc04', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
 }
 
 .haze {
@@ -180,7 +238,3 @@ i {
 /* Imported Weather Icons from 
 http://erikflowers.github.io/weather-icons/
 */
-
-button {
-  display: block;
-}

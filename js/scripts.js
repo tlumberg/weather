@@ -21,38 +21,40 @@ $.simpleWeather({
       $('#spokane .temp').text(weather.temp);
       $('#spokane .city').text(weather.city);
       $('#spokane i').addClass('icon-'+ weather.code);
+      $('#spokane .high').text(weather.high);
+      $('#spokane .low').text(weather.low);
       
       // Get Condition Code
       console.log(weather.code);
       
       if ( weather.code >= 0 && weather.code <= 12 ) {
-         $('body').addClass('storm');   
+         $('#spokane').addClass('storm');   
       }
       
       if ( weather.code >= 13 && weather.code <= 18 ) {
-         $('body').addClass('snow');   
+         $('#spokane').addClass('snow');   
       }
       
       if ( weather.code >= 19 && weather.code <= 22 ) {
-         $('body').addClass('haze');   
+         $('#spokane').addClass('haze');   
       }
       
       if ( weather.code >= 23 && weather.code <= 24 ) {
-         $('body').addClass('wind');   
+         $('#spokane').addClass('wind');   
       }
       
       if ( weather.code >= 25 && weather.code <= 30 ) {
-         $('body').addClass('cloud');   
+         $('#spokane').addClass('cloud');   
       }
       
       
       if ( weather.code >= 31 && weather.code <= 36 ) {
-         $('body').addClass('sunny');   
+         $('#spokane').addClass('sunny');   
       }
       
       
       if ( weather.code >= 37 && weather.code <= 47 ) {
-         $('body').addClass('storm');   
+         $('#spokane').addClass('storm');   
       }
       
     },
@@ -64,9 +66,9 @@ $.simpleWeather({
   });
 
 
-// Long Beach for SPRING BREAK 
+// Cheney 
 $.simpleWeather({
-    location: 98631,
+    location: 99004,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -76,7 +78,41 @@ $.simpleWeather({
       $('#cheney .temp').text(weather.temp);
       $('#cheney .city').text(weather.city);
       $('#cheney i').addClass('icon-'+ weather.code);
+      $('#cheney .high').text(weather.high);
+      $('#cheney .low').text(weather.low);
       
+        // Get Condition Code
+      console.log(weather.code);
+      
+      if ( weather.code >= 0 && weather.code <= 12 ) {
+         $('#cheney').addClass('storm');   
+      }
+      
+      if ( weather.code >= 13 && weather.code <= 18 ) {
+         $('#cheney').addClass('snow');   
+      }
+      
+      if ( weather.code >= 19 && weather.code <= 22 ) {
+         $('#cheney').addClass('haze');   
+      }
+      
+      if ( weather.code >= 23 && weather.code <= 24 ) {
+         $('#cheney').addClass('wind');   
+      }
+      
+      if ( weather.code >= 25 && weather.code <= 30 ) {
+         $('#cheney').addClass('cloud');   
+      }
+      
+      
+      if ( weather.code >= 31 && weather.code <= 36 ) {
+         $('#cheney').addClass('sunny');   
+      }
+      
+      
+      if ( weather.code >= 37 && weather.code <= 47 ) {
+         $('#cheney').addClass('storm');   
+      }
     },
     error: function(error) {
       // Show if weather cannot be retreived
@@ -131,34 +167,49 @@ var getWeather = function(location) {
       $('#me .temp').text(weather.temp);
       $('#me .city').text(weather.city);
       $('#me i').addClass('icon-'+ weather.code);
+      $('#me .high').text(weather.high);
+      $('#me .low').text(weather.low);
         
+        
+        // Get Condition Code
+      console.log(weather.code);
+      
+      if ( weather.code >= 0 && weather.code <= 12 ) {
+         $('#me').addClass('storm');   
+      }
+      
+      if ( weather.code >= 13 && weather.code <= 18 ) {
+         $('#me').addClass('snow');   
+      }
+      
+      if ( weather.code >= 19 && weather.code <= 22 ) {
+         $('#me').addClass('haze');   
+      }
+      
+      if ( weather.code >= 23 && weather.code <= 24 ) {
+         $('#me').addClass('wind');   
+      }
+      
+      if ( weather.code >= 25 && weather.code <= 30 ) {
+         $('#me').addClass('cloud');   
+      }
+      
+      
+      if ( weather.code >= 31 && weather.code <= 36 ) {
+         $('#me').addClass('sunny');   
+      }
+      
+      
+      if ( weather.code >= 37 && weather.code <= 47 ) {
+         $('#me').addClass('storm');   
+      }
 
     },
     error: function(error) {
       // Show if weather cannot be retreived
-      console.log('Oops! Something went wrong, take a peak outside.');
+      console.log('You fucked up, look outside.');
     }
   
   });
   
 };
-
-
-//FORECAST
-    $('#forecast figure:nth-child(1) h2').text(weather.forecast[0].day);
-      $('#forecast figure:nth-child(1) img').attr('src', weather.forecast[0].image);
-      $('#forecast figure:nth-child(1) figcaption').text(weather.forecast[0].text);
-      $('#forecast figure:nth-child(1) .high').text(weather.forecast[0].high);
-      
-       //forecast day 2
-      $('#forecast figure:nth-child(2) h2').text(weather.forecast[1].day);
-      $('#forecast figure:nth-child(2) img').attr('src', weather.forecast[1].image);
-      $('#forecast figure:nth-child(2) figcaption').text(weather.forecast[1].text);
-      $('#forecast figure:nth-child(2) .high').text(weather.forecast[1].high);
-      
-      //forecast day 3
-      $('#forecast figure:nth-child(3) h2').text(weather.forecast[2].day);
-      $('#forecast figure:nth-child(3) img').attr('src', weather.forecast[2].image);
-      $('#forecast figure:nth-child(3) figcaption').text(weather.forecast[2].text);
-      $('#forecast figure:nth-child(3) .high').text(weather.forecast[2].high);
-     
